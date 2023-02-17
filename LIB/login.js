@@ -19,9 +19,9 @@ async function login(baseURL, credentials) {
 }
 
 async function loginPOST(http, credentials){
-    console.log((await http.post("/api/login", credentials)).data);
     return (await http.post("/api/login", credentials)).data;
 }
+
 
 
 export {login};
